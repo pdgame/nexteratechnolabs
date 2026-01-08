@@ -1,0 +1,130 @@
+.contactWrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-3xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.formGroup {
+    margin-bottom: var(--spacing-lg);
+}
+
+.label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    color: var(--white);
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    transition: all var(--transition-base);
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--primary-orange);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: var(--gray-300);
+}
+
+.select {
+    cursor: pointer;
+}
+
+.select option {
+    background: var(--navy-medium);
+    color: var(--white);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form .btn {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-size: var(--font-size-lg);
+    margin-top: var(--spacing-md);
+}
+
+.form .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.infoCard {
+    padding: var(--spacing-lg);
+    text-align: center;
+}
+
+.infoIcon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.infoTitle {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: var(--spacing-xs);
+}
+
+.infoText {
+    font-size: var(--font-size-base);
+    color: var(--gray-300);
+}
+
+/* Mobile Styles */
+@media (max-width: 968px) {
+    .contactWrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+
+    .form {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: var(--spacing-md);
+    }
+
+    .form .btn {
+        padding: var(--spacing-sm);
+        font-size: var(--font-size-base);
+    }
+}

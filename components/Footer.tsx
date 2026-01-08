@@ -43,16 +43,6 @@ export default function Footer() {
                             <li>.NET Solutions</li>
                         </ul>
                     </div>
-
-                    <div className={styles.footerSection}>
-                        <h3 className={styles.footerTitle}>Connect</h3>
-                        <div className={styles.socialLinks}>
-                            <a href="#" className={styles.socialLink} aria-label="LinkedIn">💼</a>
-                            <a href="#" className={styles.socialLink} aria-label="Twitter">🐦</a>
-                            <a href="#" className={styles.socialLink} aria-label="Facebook">📘</a>
-                            <a href="#" className={styles.socialLink} aria-label="Instagram">📷</a>
-                        </div>
-                    </div>
                 </div>
 
                 <div className={styles.footerBottom}>
@@ -62,3 +52,4 @@ export default function Footer() {
         </footer>
     );
 }
+
